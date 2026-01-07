@@ -1,0 +1,29 @@
+{
+  "Aref": 2.0,
+  "D": 2.0,
+  "D_x": 2.0,
+  "D_x_over_D_y": 1.0,
+  "D_y": 2.0,
+  "bounds": {
+    "x": [
+      -1.0,
+      1.0
+    ],
+    "y": [
+      -1.0,
+      1.0
+    ],
+    "z": [
+      -1.0,
+      1.0
+    ]
+  },
+  "empty_patches": [
+    "defaultFaces"
+  ],
+  "is_2d": true,
+  "patch": "cylinder",
+  "span": 1.0,
+  "span_geom": 2.0,
+  "span_ref": 1.0
+}

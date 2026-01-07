@@ -1,0 +1,12 @@
+{
+  "case": "fom_only",
+  "case_dir": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/results/low/fom_only/fom_only_case",
+  "force_coeffs_dat": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/results/low/fom_only/fom_only_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat",
+  "func_name": "forceCoeffsIncompressible",
+  "func_path": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/results/low/fom_only/fom_only_case/system/forceCoeffsIncompressible",
+  "patch": "cylinder",
+  "time_range": [
+    0.0,
+    80.0
+  ]
+}

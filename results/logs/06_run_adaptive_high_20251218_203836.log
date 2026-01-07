@@ -1,0 +1,7 @@
+[20:38:36] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[20:38:36] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/high.yaml
+[20:38:36] Running adaptive driver (high config)...
+[adaptive_driver] debug: tol=2 train_window=0.3 validate_every=20 validate_steps=1 dt=0.0025 metric=vol_weighted validation_n=10 accepted_n=6 errU_mean=0.378 errU_max=0.574 errp_mean=2 errp_max=2.54
+[adaptive_driver] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/timeline.csv /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/validation.csv /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/speed.json
+[adaptive_driver] Case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/adaptive_case
+[20:38:54] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/06_run_adaptive_high_20251218_203836.log

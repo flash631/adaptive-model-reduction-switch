@@ -1,0 +1,4 @@
+case,source,Cd_mean,Cl_rms,f_peak_Hz,St,beta
+low,FOM-only,10.123004,2.232878,0.16042781,0.32085561,0.5
+low,adaptive (FOM segments),9.607531,1.6358103,0.16042781,0.32085561,0.5
+low,ROM intervals (postProcess),9.6544893,0.58950343,0.16042781,0.32085561,0.5

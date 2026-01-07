@@ -1,0 +1,3 @@
+[00:25:52] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[00:25:52] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/rom/configs/low.yaml
+[00:25:52] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...

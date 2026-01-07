@@ -1,0 +1,264 @@
+[01:43:07] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[01:43:07] Sourced OpenFOAM: /opt/openfoam13/etc/bashrc
+[01:43:07] Post-processing force coefficients over FOM-only fields (low)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/fom_only/fom_only_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/metrics/forceCoeffsIncompressible_fom_only_meta.json
+[01:43:23] Post-processing force coefficients over ROM-reconstructed fields (low)...
+[01:43:23] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[01:43:23] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[01:43:23] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/adaptive_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/metrics/forceCoeffsIncompressible_adaptive_meta.json
+[01:45:19] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/10_postprocess_coeffs_low_20251226_014323.log
+[01:45:19] Post-processing force coefficients over ROM-reconstructed fields (high)...
+[01:45:19] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[01:45:19] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/high.yaml
+[01:45:19] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/adaptive_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/metrics/forceCoeffsIncompressible_adaptive_meta.json
+[01:47:22] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/11_postprocess_coeffs_high_20251226_014519.log
+[01:47:22] Post-processing force coefficients over FOM-only fields (high)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/fom_only/fom_only_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/metrics/forceCoeffsIncompressible_fom_only_meta.json
+[01:47:23] Running forceCoeffs configuration verification (low/high)...
+[verify_forcecoeffs_config] case=low case_dir=/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+[verify_forcecoeffs_config] cylinder_patch=cylinder is_2d=True inlet_magU=1.0
+[verify_forcecoeffs_config] blockage_beta=D/H=0.5
+[verify_forcecoeffs_config] system/controlDict:functions:forceCoeffs1: patches=['cylinder'] magUInf=1.0 lRef=2.0 Aref=2.0 dragDir=(1.0, 0.0, 0.0) liftDir=(0.0, 1.0, 0.0) rho=rhoInf rhoInf=1.0
+[verify_forcecoeffs_config] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/forcecoeffs_config_low.json
+[verify_forcecoeffs_config] case=high case_dir=/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/high
+[verify_forcecoeffs_config] cylinder_patch=cylinder is_2d=True inlet_magU=1.0
+[verify_forcecoeffs_config] blockage_beta=D/H=0.5
+[verify_forcecoeffs_config] system/controlDict:functions:forceCoeffs1: patches=['cylinder'] magUInf=1.0 lRef=2.0 Aref=2.0 dragDir=(1.0, 0.0, 0.0) liftDir=(0.0, 1.0, 0.0) rho=rhoInf rhoInf=1.0
+[verify_forcecoeffs_config] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/forcecoeffs_config_high.json
+[01:47:24] Computing force statistics tables (low/high)...
+[compute_force_stats] unconfined Re=200 reference: Cd≈1.316, St≈0.1958 (sanity anchor)
+[compute_force_stats] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/force_stats.csv
+[compute_force_stats] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/force_stats_low.csv
+[compute_force_stats] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/tables/force_stats_checks_low.tex
+[compute_force_stats] NOTE: Large deviation is expected under strong confinement, but only after configuration checks pass.
+[compute_force_stats] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/force_stats.csv
+[compute_force_stats] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/force_stats_high.csv
+[compute_force_stats] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/tables/force_stats_checks_high.tex
+[compute_force_stats] NOTE: Large deviation is expected under strong confinement, but only after configuration checks pass.
+[01:47:24] Rendering low/high flow snapshots used by Figures 23/24/29 (no pvpython)...
+[render_snapshots_shared] time=0 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_low_t0.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_low_tmid.png
+[render_snapshots_shared] time=1 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_low_tend.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/p_low_tmid.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/low_vort_mid.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_high_tmid.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/high_vort_mid.png
+[01:47:29] Rendering vorticity comparison (low: FOM vs ROM, no pvpython)...
+[render_vorticity_comparison] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/fom_vs_rom_vortZ_mid_low.png
+[01:47:31] Rendering velocity-magnitude comparisons (no pvpython)...
+[render_umag_comparison] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/fom_vs_rom_Umag_mid_low_clean.png
+[render_umag_comparison] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/fom_vs_rom_Umag_mid_high_clean.png
+[01:47:33] Generating tables/figures from results...
+[report_assets] Wrote tables to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/tables
+[report_assets] Wrote/copied figures to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures
+[01:47:37] Generating BibTeX from references PDFs...
+[references_bib] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/report.bib (10 entries)
+[01:47:37] Exporting first 3 POD velocity modes to an OpenFOAM case (low)...
+[export_pod_modes] Wrote modes case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/modes_case
+[01:47:38] Rendering POD mode snapshots used by Figure 27 (no pvpython)...
+[render_snapshots_shared] time=1001 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/mode1_U.png
+[render_snapshots_shared] time=1002 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/mode2_U.png
+[render_snapshots_shared] time=1003 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/mode3_U.png
+[01:47:39] Attempting ParaView screenshots (pvpython; offscreen when possible)...
+[pv_screenshots] pvpython screenshot generation failed: Command failed (rc=-6): pvpython /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/pv_screenshots.py --mode pv --figdir /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures
+[kalel1938-asus:111277] opal_ifinit: socket() failed with errno=1
+[kalel1938-asus:111277] pmix_ifinit: socket() failed with errno=1
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  kalel1938-asus
+  System call: open(2) 
+  Error:       Permission denied (errno 13)
+--------------------------------------------------------------------------
+[0m[31m(   1.250s) [paraview        ]vtkXOpenGLRenderWindow.:459    ERR| vtkXOpenGLRenderWindow (0x629ec70af060): bad X server connection. DISPLAY=:0. Aborting.
+[0m
+[kalel1938-asus:111277] *** Process received signal ***
+[kalel1938-asus:111277] Signal: Aborted (6)
+[kalel1938-asus:111277] Signal code:  (-6)
+[kalel1938-asus:111277] [ 0] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x45f60) [0x79dddda45f60]
+[kalel1938-asus:111277] [ 1] /usr/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11d) [0x79ddddaa5fed]
+[kalel1938-asus:111277] [ 2] /usr/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e) [0x79dddda45e2e]
+[kalel1938-asus:111277] [ 3] /usr/lib/x86_64-linux-gnu/libc.so.6(abort+0x27) [0x79dddda28888]
+[kalel1938-asus:111277] [ 4] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow13CreateAWindowEv+0x355) [0x79ddd8bbf907]
+[kalel1938-asus:111277] [ 5] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow16WindowInitializeEv+0x29) [0x79ddd8bc166b]
+[kalel1938-asus:111277] [ 6] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow10InitializeEv+0x3c) [0x79ddd8bc173a]
+[kalel1938-asus:111277] [ 7] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow5StartEv+0x29) [0x79ddd8bc1b0d]
+[kalel1938-asus:111277] [ 8] /usr/lib/x86_64-linux-gnu/libvtkRenderingUI-pv5.13.so.1(_ZN26vtkXRenderWindowInteractor10InitializeEv+0x73a) [0x79ddd9ac3acc]
+[kalel1938-asus:111277] [ 9] /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-pv5.13.so.1(_ZN15vtkRenderWindow6RenderEv+0x32f) [0x79ddd6aba3a3]
+[kalel1938-asus:111277] [10] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN21vtkOpenGLRenderWindow6RenderEv+0x84) [0x79ddd8aa8fcc]
+[kalel1938-asus:111277] [11] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow6RenderEv+0xa2) [0x79ddd8bc5d9c]
+[kalel1938-asus:111277] [12] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN15vtkPVRenderView6RenderEbb+0x1341) [0x79dddd3133a7]
+[kalel1938-asus:111277] [13] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN15vtkPVRenderView11StillRenderEv+0x109) [0x79dddd311e79]
+[kalel1938-asus:111277] [14] /usr/lib/x86_64-linux-gnu/libvtkRemotingApplication-pv5.13.so.1(_Z22vtkPVRenderViewCommandP26vtkClientServerInterpreterP13vtkObjectBasePKcRK21vtkClientServerStreamRS5_Pv+0x137e) [0x79dde41f391f]
+[kalel1938-asus:111277] [15] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter19CallCommandFunctionEPKcP13vtkObjectBaseS1_RK21vtkClientServerStreamRS4_+0x376) [0x79dde57c2fc2]
+[kalel1938-asus:111277] [16] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter20ProcessCommandInvokeERK21vtkClientServerStreami+0x205) [0x79dde57c1183]
+[kalel1938-asus:111277] [17] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter17ProcessOneMessageERK21vtkClientServerStreami+0x170) [0x79dde57c05cc]
+[kalel1938-asus:111277] [18] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter13ProcessStreamERK21vtkClientServerStream+0x33) [0x79dde57c042b]
+[kalel1938-asus:111277] [19] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionCore21ExecuteStreamInternalERK21vtkClientServerStreamb+0xfe) [0x79dde38fd126]
+[kalel1938-asus:111277] [20] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionCore13ExecuteStreamEjRK21vtkClientServerStreamb+0x208) [0x79dde38fceb6]
+[kalel1938-asus:111277] [21] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionBase13ExecuteStreamEjRK21vtkClientServerStreamb+0x64) [0x79dde38f8eae]
+[kalel1938-asus:111277] [22] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN10vtkSMProxy13ExecuteStreamERK21vtkClientServerStreambj+0xae) [0x79dde3a6c33c]
+[kalel1938-asus:111277] [23] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN14vtkSMViewProxy11StillRenderEv+0x32f) [0x79dddd482031]
+[kalel1938-asus:111277] [24] /usr/lib/python3/dist-packages/paraview/modules/vtkRemotingViews.cpython-313-x86_64-linux-gnu.so(+0x3186ea) [0x79dda5b186ea]
+[kalel1938-asus:111277] [25] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x176849) [0x79dde1376849]
+[kalel1938-asus:111277] [26] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Call+0x69) [0x79dde131b5f9]
+[kalel1938-asus:111277] [27] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0x8e4) [0x79dde145db24]
+[kalel1938-asus:111277] [28] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyEval_EvalCode+0xd9) [0x79dde145d159]
+[kalel1938-asus:111277] [29] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x2e94bc) [0x79dde14e94bc]
+[kalel1938-asus:111277] *** End of error message ***
+
+[pv_screenshots] Manual screenshot checklist:
+- Open `cases/low/VTK/low_0.vtk` for mesh screenshots
+- Save mesh whole + zoom near cylinder
+- Save U-mag and p at steps 0,100,200
+- Save vorticity magnitude at step 100
+- Save side-by-side FOM (low_100.vtk) vs ROM (rom_case_0.5.vtk)
+- Save first 3 velocity modes (modes_case_1001/1002/1003.vtk)
+- (High) Open `cases/high/VTK/high_0.5.vtk` for high-fidelity views
+- (High) Save mesh whole + zoom, U-mag and vorticity at t=0.5
+- (High) Save side-by-side FOM-only vs adaptive at t=0.5
+[01:47:43] Re-rendering report snapshots (enforce shared color scale + consistent colorbar placement)...
+[render_snapshots_shared] time=0 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_low_t0.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_low_tmid.png
+[render_snapshots_shared] time=1 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_low_tend.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/p_low_tmid.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/low_vort_mid.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/U_high_tmid.png
+[render_snapshots_shared] time=0.5 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/high_vort_mid.png
+[render_snapshots_shared] time=1001 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/mode1_U.png
+[render_snapshots_shared] time=1002 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/mode2_U.png
+[render_snapshots_shared] time=1003 -> /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/mode3_U.png
+[render_vorticity_comparison] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures/fom_vs_rom_vortZ_mid_low.png
+[01:47:51] Building combined FOM/ROM comparison figure...
+[01:47:52] Building combined FOM/ROM vorticity comparison figure (low)...
+[01:47:53] Auto-cropping ParaView screenshots (reduce whitespace)...
+[01:47:58] Compiling LaTeX report...
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./report.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/underscore/underscore.sty)
+==> First Aid for underscore.sty applied!
+(/usr/local/texlive/2025/texmf-dist/tex/latex/firstaid/underscore-ltx.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(build/report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-english.trsl) (build/report.out) (build/report.out)
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./tables/case_setup.tex) (./tables/case_settings.tex)
+Overfull \hbox (13.44687pt too wide) in paragraph at lines 1--76
+ [][] 
+(./tables/rom_settings.tex) (./tables/pod_energy.tex) (./tables/force_stats.tex
+)
+
+LaTeX Warning: Citation `Zdravkovich1997' on page 2 undefined on input line 99.
+
+
+
+Overfull \hbox (36.64977pt too wide) in paragraph at lines 102--103
+\OT1/cmr/m/n/10.95 The fol-low-ing checks are gen-er-ated au-to-mat-i-cally and
+ are in-tended to catch com-mon force/normalization
+
+[2]
+Overfull \hbox (75.91138pt too wide) in paragraph at lines 105--105
+[]  \OT1/cmtt/m/n/10.95 "case_dir": "/home/kalel1938/Documents/codex_projects/a
+daptive_model_reduction/cases/low",[] 
+
+[3]
+Overfull \hbox (133.39825pt too wide) in paragraph at lines 105--105
+[]    \OT1/cmtt/m/n/10.95 "Checks enforced: forceCoeffs patches must be cylinde
+r-only; Aref/lRef/magUInf must be positive.",[] 
+
+Overfull \hbox (81.66006pt too wide) in paragraph at lines 106--106
+[]  \OT1/cmtt/m/n/10.95 "case_dir": "/home/kalel1938/Documents/codex_projects/a
+daptive_model_reduction/cases/high",[] 
+
+[4]
+Overfull \hbox (133.39825pt too wide) in paragraph at lines 106--106
+[]    \OT1/cmtt/m/n/10.95 "Checks enforced: forceCoeffs patches must be cylinde
+r-only; Aref/lRef/magUInf must be positive.",[] 
+(./tables/force_stats_checks_low.tex) (./tables/force_stats_checks_high.tex)
+[5] (./tables/summary_low.tex
+Overfull \hbox (9.871pt too wide) in paragraph at lines 3--4
+[]\OT1/cmr/m/n/10.95 Snapshots: nWrites=201 avail-able, nSnap-shot-sUsed=200 (s
+ource=openfoam[]-ascii, stride=1,
+)
+
+LaTeX Warning: Citation `Norberg2003' on page 6 undefined on input line 133.
+
+! Argument of \caption@ydblarg has an extra }.
+<inserted text> 
+                \par 
+l.144 ...inant frequency estimate from $C_l(t)$.}}
+                                                  
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on build/report.log.

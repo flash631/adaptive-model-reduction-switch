@@ -1,0 +1,23 @@
+[23:52:52] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[23:52:52] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/high.yaml
+[23:52:52] Running adaptive driver (high config)...
+Traceback (most recent call last):
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 1015, in <module>
+    main()
+    ~~~~^^
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 773, in main
+    ok, meta = _force_gate_check(
+               ~~~~~~~~~~~~~~~~~^
+        case_dir=case_dir,
+        ^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        cfg=cfg,
+        ^^^^^^^^
+    )
+    ^
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 475, in _force_gate_check
+    _run(["postProcess", "-func", "forces1", "-time", time_name], cwd=case_dir, log_path=runner_log)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 133, in _run
+    raise RuntimeError(f"Command failed (rc={rc}): {' '.join(cmd)} (see {log_path})")
+RuntimeError: Command failed (rc=1): postProcess -func forces1 -time 0.35 (see /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/logs/adaptive_driver.log)

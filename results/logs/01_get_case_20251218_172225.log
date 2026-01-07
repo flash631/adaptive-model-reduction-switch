@@ -1,0 +1,7 @@
+[17:22:25] Tutorials root: /opt/openfoam13/tutorials
+[17:22:25] Searching for a simple cylinder tutorial case (single-region, incompressible, blockMesh-preferred)...
+[17:22:25] Selected tutorial case: /opt/openfoam13/tutorials/incompressibleFluid/offsetCylinder
+[17:22:25] --force set; overwriting /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/base
+[17:22:25] Copying tutorial into cases/base...
+[17:22:25] Wrote source marker: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/base/.case_source
+[17:22:25] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/01_get_case_20251218_172225.log

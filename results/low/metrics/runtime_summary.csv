@@ -1,0 +1,2 @@
+case,adaptive_fom_s,adaptive_rom_s,adaptive_io_s,adaptive_total_s,fom_only_wall_s,fom_only_clock_s,fom_only_time_s,ratio_fomonly_over_adaptive,label
+low,45.40288744185818,25.13644136080984,0.7854469880694523,71.32477579073748,34.13452176598366,34,34.13452176598366,0.478578746130689,slowdown

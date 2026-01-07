@@ -1,0 +1,6 @@
+[23:02:53] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[23:02:53] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[23:02:53] Running FOM-only baseline (low)...
+[fom_only_run] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/fom_only/speed.json
+[fom_only_run] Case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/fom_only/fom_only_case
+[23:02:54] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/08_run_fom_only_low_20251218_230253.log

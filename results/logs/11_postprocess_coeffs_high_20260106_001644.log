@@ -1,0 +1,29 @@
+[00:16:44] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[00:16:44] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction (Copy)/rom/configs/high.yaml
+[00:16:44] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...
+Traceback (most recent call last):
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction (Copy)/rom/python/postprocess_force_coeffs.py", line 225, in <module>
+    main()
+    ~~~~^^
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction (Copy)/rom/python/postprocess_force_coeffs.py", line 203, in main
+    raise RuntimeError(f"foamPostProcess failed (rc={p.returncode}).\nstdout:\n{p.stdout}\nstderr:\n{p.stderr}")
+RuntimeError: foamPostProcess failed (rc=-6).
+stdout:
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamPostProcess -case /home/kalel1938/Documents/codex_projects/adaptive_model_reduction (Copy)/results/high/adaptive/adaptive_case -solver incompressibleFluid -func forceCoeffsIncompressible -fields (U p) -time 0:5
+Date   : Jan 06 2026
+Time   : 00:16:45
+Host   : "kalel1938-asus"
+PID    : 13516
+
+stderr:
+fileName::stripInvalid() called for invalid fileName /home/kalel1938/Documents/codex_projects/adaptive_model_reduction(Copy)
+    For debug level (= 2) > 1 this is considered fatal
+

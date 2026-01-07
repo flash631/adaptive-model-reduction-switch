@@ -1,0 +1,243 @@
+[17:31:28] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[17:31:28] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[17:31:28] Syncing cases/base -> cases/low ...
+[17:31:28] Applying low-fidelity settings (mesh/time/writeFormat)...
+[case_setup_low] Updated OpenFOAM dictionaries in /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+[17:31:28] Cleaning case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+[17:31:28] Running blockMesh...
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : blockMesh
+Date   : Dec 18 2025
+Time   : 17:31:28
+Host   : "kalel1938-asus"
+PID    : 626228
+I/O    : uncollated
+Case   : /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Basic statistics
+    Number of internal faces : 28
+    Number of boundary faces : 64
+    Number of defined boundary faces : 64
+    Number of undefined boundary faces : 0
+
+Checking topology
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0799998
+        j : 0.156918 .. 0.156918 0.169472 .. 0.169472 0.156918 .. 0.156918 0.169472 .. 0.169472 
+        k : 2
+    Block 1 cell size :
+        i : 0.08
+        j : 0.156918 .. 0.156918 0.169472 .. 0.169472 0.156918 .. 0.156918 0.169472 .. 0.169472 
+        k : 2
+    Block 2 cell size :
+        i : 0.72 .. 0.72 0.72346 .. 0.72346 0.72 .. 0.72 0.72346 .. 0.72346 
+        j : 0.219685 .. 0.219685 0.215247 .. 0.207459 0.219685 .. 0.219685 0.215247 .. 0.207459 
+        k : 2
+    Block 3 cell size :
+        i : 0.80201 .. 0.80201
+        j : 0.30201 .. 0.30201
+        k : 2
+    Block 4 cell size :
+        i : 0.219685 .. 0.219685 0.215247 .. 0.207459 0.219685 .. 0.219685 0.215247 .. 0.207459 
+        j : 0.22 .. 0.22 0.223487 .. 0.223487 0.22 .. 0.22 0.223487 .. 0.223487 
+        k : 2
+    Block 5 cell size :
+        i : 0.0799998 .. 0.0799998
+        j : 0.219685 .. 0.219685 0.207132 .. 0.207132 0.219685 .. 0.219685 0.207132 .. 0.207132 
+        k : 2
+    Block 6 cell size :
+        i : 0.08 .. 0.08
+        j : 0.219685 .. 0.219685 0.207132 .. 0.207132 0.219685 .. 0.219685 0.207132 .. 0.207132 
+        k : 2
+    Block 7 cell size :
+        i : 0.72 0.72346 .. 0.72346 0.72 0.72346 .. 0.72346 
+        j : 0.19799 0.202223 .. 0.193913 0.19799 0.202223 .. 0.193913 
+        k : 2
+    Block 8 cell size :
+        i : 0.80201 .. 0.80201
+        j : 0.30201 .. 0.30201
+        k : 2
+    Block 9 cell size :
+        i : 0.219685 .. 0.219685 0.207459 .. 0.215247 0.219685 .. 0.219685 0.207459 .. 0.215247 
+        j : 0.30201 .. 0.30201 0.273545 .. 0.273545 0.30201 .. 0.30201 0.273545 .. 0.273545 
+        k : 2
+    Block 10 cell size :
+        i : 0.08
+        j : 0.156918 .. 0.156918 0.169472 .. 0.169472 0.156918 .. 0.156918 0.169472 .. 0.169472 
+        k : 2
+    Block 11 cell size :
+        i : 0.0799998
+        j : 0.156918 0.169472 .. 0.169472 0.156918 0.169472 .. 0.169472 
+        k : 2
+    Block 12 cell size :
+        i : 0.80201 .. 0.80201 0.7735 .. 0.7735 0.80201 .. 0.80201 0.7735 .. 0.7735 
+        j : 0.219685 .. 0.219685 0.207459 .. 0.215247 0.219685 .. 0.219685 0.207459 .. 0.215247 
+        k : 2
+    Block 13 cell size :
+        i : 0.80201 .. 0.80201
+        j : 0.255025 .. 0.255026
+        k : 2
+    Block 14 cell size :
+        i : 0.19799 0.208677 .. 0.195966 0.19799 0.208677 .. 0.195966 
+        j : 0.05 0.0595531 .. 0.0595531 0.05 0.0595531 .. 0.0595531 
+        k : 2
+    Block 15 cell size :
+        i : 0.0799998 .. 0.0799998
+        j : 0.219685 .. 0.219685 0.207132 .. 0.207132 0.219685 .. 0.219685 0.207132 .. 0.207132 
+        k : 2
+    Block 16 cell size :
+        i : 0.08 .. 0.08
+        j : 0.219685 .. 0.219685 0.207132 .. 0.207132 0.219685 .. 0.219685 0.207132 .. 0.207132 
+        k : 2
+    Block 17 cell size :
+        i : 0.80201 .. 0.80201 0.7735 .. 0.7735 0.80201 .. 0.80201 0.7735 .. 0.7735 
+        j : 0.19799 .. 0.19799 0.193913 .. 0.202223 0.19799 .. 0.19799 0.193913 .. 0.202223 
+        k : 2
+    Block 18 cell size :
+        i : 0.80201 .. 0.80201
+        j : 0.255025 .. 0.255026
+        k : 2
+    Block 19 cell size :
+        i : 0.19799 .. 0.19799 0.195966 .. 0.208677 0.19799 .. 0.19799 0.195966 .. 0.208677 
+        j : 0.255025 .. 0.255026 0.184339 .. 0.184339 0.255025 .. 0.255026 0.184339 .. 0.184339 
+        k : 2
+
+No patch pairs to merge
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-5 -1.5 -1) (5 2.5 1)
+  nPoints: 994
+  nCells: 440
+  nFaces: 1817
+  nInternalFaces: 823
+----------------
+Patches
+----------------
+  patch 0 (start: 823 size: 17) name: left
+  patch 1 (start: 840 size: 17) name: right
+  patch 2 (start: 857 size: 20) name: down
+  patch 3 (start: 877 size: 20) name: up
+  patch 4 (start: 897 size: 40) name: cylinder
+  patch 5 (start: 937 size: 880) name: defaultFaces
+
+End
+
+[17:31:28] Post-mesh case setup (functionObjects: forces if cylinder patch detected)...
+[case_setup_low] Added forces functionObject for patch: cylinder
+[case_setup_low] Updated OpenFOAM dictionaries in /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+[17:31:28] Runner: foamRun  Solver: incompressibleFluid
+[17:31:28] Running solver...
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamRun -solver incompressibleFluid
+Date   : Dec 18 2025
+Time   : 17:31:29
+Host   : "kalel1938-asus"
+PID    : 626253
+I/O    : uncollated
+Case   : /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting solver incompressibleFluid
+Selecting viscosity model constant
+Selecting turbulence model type laminar
+    Selecting laminar stress model generalisedNewtonian
+        Selecting generalised Newtonian model CrossPowerLaw
+No MRF models present
+
+Courant Number mean: 0.000271214 max: 0.00342763
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: No corrector convergence criteria found
+        Calculations will do 5 corrections
+
+
+PIMPLE: Operating solver in transient mode with 5 outer correctors
+
+
+
+Starting time loop
+
+volFieldValue UminMag read:
+    number of cells = 440
+    volume = 73.7426
+    operation = minMag
+
+volFieldValue UmaxMag read:
+    number of cells = 440
+    volume = 73.7426
+    operation = maxMag
+
+volFieldValue pMin read:
+    number of cells = 440
+    volume = 73.7426
+    operation = min
+
+volFieldValue pMax read:
+    number of cells = 440
+    volume = 73.7426
+    operation = max
+
+
+
+--> FOAM FATAL IO ERROR: 
+keyword CofR is undefined in dictionary "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low/system/functions/forces1"
+
+file: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low/system/functions/forces1 from line 157 to 165.
+
+    From function const Foam::entry& Foam::dictionary::lookupEntry(const Foam::word&, bool, bool) const
+    in file db/dictionary/dictionary.C at line 707.
+
+FOAM exiting
+

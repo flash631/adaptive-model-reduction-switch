@@ -1,0 +1,11 @@
+[23:55:20] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[23:55:20] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/high.yaml
+[23:55:20] Running adaptive driver (high config)...
+/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/plots.py:142: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax1.legend(loc="best", frameon=False)
+/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/plots.py:155: UserWarning: No artists with labels found to put in legend.  Note that artists whose label start with an underscore are ignored when legend() is called with no argument.
+  ax2.legend(loc="best", frameon=False)
+[adaptive_driver] debug: tol=2 train_window=0.3 validate_every=20 validate_steps=20 dt=0.0025 metric=rom_force_gate validation_n=94 accepted_n=0 errU_mean=nan errU_max=nan errp_mean=nan errp_max=nan
+[adaptive_driver] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/timeline.csv /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/validation.csv /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/speed.json
+[adaptive_driver] Case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/high/adaptive/adaptive_case
+[00:18:47] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/06_run_adaptive_high_20251221_235520.log

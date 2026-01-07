@@ -1,0 +1,6 @@
+[17:12:46] Tutorials root: /home/kalel1938/OpenFOAM/kalel1938-13/run/tutorials
+[17:12:46] Searching for cylinder tutorial cases...
+[17:12:46] Selected tutorial case: /home/kalel1938/OpenFOAM/kalel1938-13/run/tutorials/multiRegion/CHT/VoFcoolingCylinder2D
+[17:12:46] Copying tutorial into cases/base...
+[17:12:46] Wrote source marker: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/base/.case_source
+[17:12:46] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/01_get_case_20251218_171246.log

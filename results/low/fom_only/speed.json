@@ -1,0 +1,10 @@
+{
+  "case_dir": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/fom_only/fom_only_case",
+  "clock_s": 34.0,
+  "deltaT": 0.005,
+  "execution_s": 33.9449,
+  "log_path": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/logs/fom_only.log",
+  "t0": 0.0,
+  "t1": 80.0,
+  "wall_s": 34.13452176598366
+}

@@ -1,0 +1,7 @@
+[22:38:34] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[22:38:34] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[22:38:34] Running adaptive driver (FOM/ROM switching)...
+[adaptive_driver] debug: tol=0.05 train_window=0.2 validate_every=20 validate_steps=1 dt=0.005 metric=rom_precheck validation_n=50 accepted_n=0 errU_mean=nan errU_max=nan errp_mean=nan errp_max=nan
+[adaptive_driver] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/timeline.csv /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/validation.csv /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/speed.json
+[adaptive_driver] Case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/adaptive_case
+[22:40:33] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/04_run_adaptive_low_20251219_223834.log

@@ -1,0 +1,54 @@
+{
+  "blockage_beta": 0.5,
+  "case": "low",
+  "case_dir": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/cases/low",
+  "cylinder_patch": "cylinder",
+  "domain_bounds": {
+    "xmax": 5.0,
+    "xmin": -5.0,
+    "ymax": 2.5,
+    "ymin": -1.5,
+    "zmax": 1.0,
+    "zmin": -1.0
+  },
+  "forceCoeffs": [
+    {
+      "Aref": 2.0,
+      "CofR": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dragDir": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lRef": 2.0,
+      "liftDir": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "magUInf": 1.0,
+      "name": "forceCoeffs1",
+      "patches": [
+        "cylinder"
+      ],
+      "pitchAxis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rho": "rhoInf",
+      "rhoInf": 1.0,
+      "source": "system/controlDict:functions"
+    }
+  ],
+  "inlet_magU": 1.0,
+  "is_2d": true,
+  "notes": [
+    "Checks enforced: forceCoeffs patches must be cylinder-only; Aref/lRef/magUInf must be positive.",
+    "Convention: for 2D cases, coefficients are interpreted per unit span."
+  ]
+}

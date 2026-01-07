@@ -1,0 +1,18 @@
+{
+  "D": 2.0,
+  "H": 4.0,
+  "beta": 0.5,
+  "cylinder_patch": "cylinder",
+  "domain_bounds": {
+    "xmax": 5.0,
+    "xmin": -5.0,
+    "ymax": 2.5,
+    "ymin": -1.5,
+    "zmax": 1.0,
+    "zmin": -1.0
+  },
+  "domain_y_bounds": [
+    -1.5,
+    2.5
+  ]
+}

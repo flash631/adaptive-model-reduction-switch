@@ -1,0 +1,76 @@
+# Low-fidelity defaults (keep laptop-friendly)
+case:
+  base_dir: cases/base
+  work_dir: cases/low
+  results_dir: results/low
+
+openfoam:
+  # If auto, uses system/controlDict application when present.
+  solver: auto
+  endTime: 80.0
+  deltaT: 0.005
+  writeControl: timeStep
+  writeInterval: 20
+  writeFormat: ascii
+  purgeWrite: 0
+
+mesh:
+  # Scales each block cell count triple (Nx Ny Nz) by this factor.
+  # If the case uses snappyHexMesh, this only affects the background mesh.
+  coarsen_factor: 0.5
+  min_cells_per_dir: 1
+
+export:
+  run_foamToVTK: true
+  vtk_fields: ["U", "p"]
+  snapshot_fields: ["U", "p"]
+  time_stride: 1
+  max_snapshots: 200
+  min_time: 0.0
+
+rom:
+  # POD ranks for separate bases
+  r_u: 8
+  r_p: 6
+  energy_threshold: 0.999
+
+  # OpInf regularization
+  ridge: 1.0e-6
+
+  # ODE integrator (solve_ivp method name)
+  integrator: BDF
+  clip_factor: 1.25
+
+  # OpenFOAM ROM case writing (reduce disk use)
+  write_stride: 10
+  template_time: "0"
+  # Safety thresholds for ROM-written states used to start a FOM validation burst.
+  # These are applied after removing the pressure gauge (mean).
+  max_u_mag: 10.0
+  max_p_abs: 50.0
+  # Discard initial transient snapshots before training (stabilizes OpInf).
+  train_discard_frac: 0.20
+
+adaptive:
+  start_time: 0.0
+  end_time: 10.0
+  train_window: 0.2
+  rom_horizon: 1.0
+  validate_every: 20        # in time steps
+  validate_steps: 1
+  # Pressure in incompressible settings is gauge-free and often harder to match without stabilization,
+  # so we use a relaxed tolerance on max(err_U, err_p) to allow some ROM intervals.
+  tol: 2.1                  # threshold on max(err_U, err_p)
+  retrain_steps: 20
+  # Additional safety gate: reject ROM-written states that imply absurd Cd/Cl
+  # (computed from OpenFOAM forces on the cylinder patch before starting a FOM burst).
+  force_gate:
+    enabled: true
+    discard_frac: 0.30
+    cd_factor_max: 2.0
+    cd_abs_max: 50.0
+    cl_rms_factor_max: 3.0
+    cl_abs_max: 50.0
+  # Each cycle advances ~validate_every*deltaT (plus validation/retrain windows).
+  # Keep this high enough to cover end_time without premature termination.
+  max_cycles: 250

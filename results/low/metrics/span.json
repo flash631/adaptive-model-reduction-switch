@@ -1,0 +1,10 @@
+{
+  "Aref": 2.0,
+  "cylinder_patch": "cylinder",
+  "empty_patches": [
+    "defaultFaces"
+  ],
+  "is_2d": true,
+  "span": 1.0,
+  "span_geom": 2.0
+}

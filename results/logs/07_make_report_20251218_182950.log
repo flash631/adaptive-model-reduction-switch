@@ -1,0 +1,372 @@
+[18:29:50] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[18:29:50] Generating tables/figures from results...
+[report_assets] Wrote tables to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/tables
+[report_assets] Wrote/copied figures to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures
+[18:29:51] Generating BibTeX from references PDFs...
+[references_bib] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/report.bib (10 entries)
+[18:29:51] Exporting first 3 POD velocity modes to an OpenFOAM case (low)...
+[export_pod_modes] Wrote modes case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/modes_case
+[18:29:51] Attempting ParaView screenshots (pvpython)...
+[pv_screenshots] pvpython screenshot generation failed: Command failed (rc=-6): pvpython /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/pv_screenshots.py --mode pv --figdir /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures
+[kalel1938-asus:644316] opal_ifinit: socket() failed with errno=1
+[kalel1938-asus:644316] pmix_ifinit: socket() failed with errno=1
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  kalel1938-asus
+  System call: open(2) 
+  Error:       Permission denied (errno 13)
+--------------------------------------------------------------------------
+[0m[31m(   1.088s) [paraview        ]vtkXOpenGLRenderWindow.:459    ERR| vtkXOpenGLRenderWindow (0x5b11fc425920): bad X server connection. DISPLAY=:0. Aborting.
+[0m
+[kalel1938-asus:644316] *** Process received signal ***
+[kalel1938-asus:644316] Signal: Aborted (6)
+[kalel1938-asus:644316] Signal code:  (-6)
+[kalel1938-asus:644316] [ 0] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x45f60) [0x7d66bd445f60]
+[kalel1938-asus:644316] [ 1] /usr/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11d) [0x7d66bd4a5fed]
+[kalel1938-asus:644316] [ 2] /usr/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e) [0x7d66bd445e2e]
+[kalel1938-asus:644316] [ 3] /usr/lib/x86_64-linux-gnu/libc.so.6(abort+0x27) [0x7d66bd428888]
+[kalel1938-asus:644316] [ 4] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow13CreateAWindowEv+0x355) [0x7d66b83bf907]
+[kalel1938-asus:644316] [ 5] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow16WindowInitializeEv+0x29) [0x7d66b83c166b]
+[kalel1938-asus:644316] [ 6] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow10InitializeEv+0x3c) [0x7d66b83c173a]
+[kalel1938-asus:644316] [ 7] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow5StartEv+0x29) [0x7d66b83c1b0d]
+[kalel1938-asus:644316] [ 8] /usr/lib/x86_64-linux-gnu/libvtkRenderingUI-pv5.13.so.1(_ZN26vtkXRenderWindowInteractor10InitializeEv+0x73a) [0x7d66b931eacc]
+[kalel1938-asus:644316] [ 9] /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-pv5.13.so.1(_ZN15vtkRenderWindow6RenderEv+0x32f) [0x7d66b62ba3a3]
+[kalel1938-asus:644316] [10] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN21vtkOpenGLRenderWindow6RenderEv+0x84) [0x7d66b82a8fcc]
+[kalel1938-asus:644316] [11] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow6RenderEv+0xa2) [0x7d66b83c5d9c]
+[kalel1938-asus:644316] [12] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN15vtkPVRenderView6RenderEbb+0x1341) [0x7d66bcb133a7]
+[kalel1938-asus:644316] [13] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN15vtkPVRenderView11StillRenderEv+0x109) [0x7d66bcb11e79]
+[kalel1938-asus:644316] [14] /usr/lib/x86_64-linux-gnu/libvtkRemotingApplication-pv5.13.so.1(_Z22vtkPVRenderViewCommandP26vtkClientServerInterpreterP13vtkObjectBasePKcRK21vtkClientServerStreamRS5_Pv+0x137e) [0x7d66c39f391f]
+[kalel1938-asus:644316] [15] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter19CallCommandFunctionEPKcP13vtkObjectBaseS1_RK21vtkClientServerStreamRS4_+0x376) [0x7d66c5036fc2]
+[kalel1938-asus:644316] [16] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter20ProcessCommandInvokeERK21vtkClientServerStreami+0x205) [0x7d66c5035183]
+[kalel1938-asus:644316] [17] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter17ProcessOneMessageERK21vtkClientServerStreami+0x170) [0x7d66c50345cc]
+[kalel1938-asus:644316] [18] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter13ProcessStreamERK21vtkClientServerStream+0x33) [0x7d66c503442b]
+[kalel1938-asus:644316] [19] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionCore21ExecuteStreamInternalERK21vtkClientServerStreamb+0xfe) [0x7d66c30fd126]
+[kalel1938-asus:644316] [20] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionCore13ExecuteStreamEjRK21vtkClientServerStreamb+0x208) [0x7d66c30fceb6]
+[kalel1938-asus:644316] [21] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionBase13ExecuteStreamEjRK21vtkClientServerStreamb+0x64) [0x7d66c30f8eae]
+[kalel1938-asus:644316] [22] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN10vtkSMProxy13ExecuteStreamERK21vtkClientServerStreambj+0xae) [0x7d66c326c33c]
+[kalel1938-asus:644316] [23] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN14vtkSMViewProxy11StillRenderEv+0x32f) [0x7d66bcc82031]
+[kalel1938-asus:644316] [24] /usr/lib/python3/dist-packages/paraview/modules/vtkRemotingViews.cpython-313-x86_64-linux-gnu.so(+0x3186ea) [0x7d66853186ea]
+[kalel1938-asus:644316] [25] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x176849) [0x7d66c0d76849]
+[kalel1938-asus:644316] [26] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Call+0x69) [0x7d66c0d1b5f9]
+[kalel1938-asus:644316] [27] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0x8e4) [0x7d66c0e5db24]
+[kalel1938-asus:644316] [28] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyEval_EvalCode+0xd9) [0x7d66c0e5d159]
+[kalel1938-asus:644316] [29] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x2e94bc) [0x7d66c0ee94bc]
+[kalel1938-asus:644316] *** End of error message ***
+
+[pv_screenshots] Manual screenshot checklist:
+- Open `cases/low/VTK/low_0.vtk` for mesh screenshots
+- Save mesh whole + zoom near cylinder
+- Save U-mag and p at steps 0,100,200
+- Save vorticity magnitude at step 100
+- Save side-by-side FOM (low_100.vtk) vs ROM (rom_case_0.5.vtk)
+- Save first 3 velocity modes (modes_case_1001/1002/1003.vtk)
+[18:29:55] Compiling LaTeX report...
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./report.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/underscore/underscore.sty)
+==> First Aid for underscore.sty applied!
+(/usr/local/texlive/2025/texmf-dist/tex/latex/firstaid/underscore-ltx.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(build/report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(build/report.out) (build/report.out)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-english.trsl)
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./tables/case_settings.tex) (./tables/rom_settings.tex) (build/report.bbl
+[2]
+[3 <./figures/low_svd_U.png>]
+Underfull \hbox (badness 6961) in paragraph at lines 67--73
+[]\OT1/cmr/m/n/10.95 Zancanaro, Ngan, Sta-bile, and Rozza.  A seg-re-gated redu
+ced-order model
+
+Underfull \hbox (badness 4582) in paragraph at lines 67--73
+\OT1/cmr/m/n/10.95 of a pressure-based solver for tur-bu-lent com-press-ible fl
+ows.  arXiv preprint,
+)
+[4 <./figures/low_energy_U.png>]
+[5 <./figures/low_err_U.png> <./figures/low_timeline.png>]
+[6 <./figures/low_errU_validate.png> <./figures/low_speed.png>]
+[7 <./figures/low_forces.png> <./figures/high_timeline.png>]
+[8 <./figures/high_errU_validate.png> <./figures/high_speed.png>]
+[9 <./figures/high_forces.png>]
+[10] (build/report.aux) )
+(see the transcript file for additional information)</usr/local/texlive/2025/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on build/report.pdf (10 pages, 426477 bytes).
+Transcript written on build/report.log.
+This is BibTeX, Version 0.99d (TeX Live 2025)
+The top-level auxiliary file: build/report.aux
+The style file: plain.bst
+Database file #1: report.bib
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./report.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/underscore/underscore.sty)
+==> First Aid for underscore.sty applied!
+(/usr/local/texlive/2025/texmf-dist/tex/latex/firstaid/underscore-ltx.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(build/report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(build/report.out) (build/report.out)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-english.trsl)
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./tables/case_settings.tex) (./tables/rom_settings.tex) (build/report.bbl
+[2]
+[3 <./figures/low_svd_U.png>]
+Underfull \hbox (badness 6961) in paragraph at lines 67--73
+[]\OT1/cmr/m/n/10.95 Zancanaro, Ngan, Sta-bile, and Rozza.  A seg-re-gated redu
+ced-order model
+
+Underfull \hbox (badness 4582) in paragraph at lines 67--73
+\OT1/cmr/m/n/10.95 of a pressure-based solver for tur-bu-lent com-press-ible fl
+ows.  arXiv preprint,
+)
+[4 <./figures/low_energy_U.png>]
+[5 <./figures/low_err_U.png> <./figures/low_timeline.png>]
+[6 <./figures/low_errU_validate.png> <./figures/low_speed.png>]
+[7 <./figures/low_forces.png> <./figures/high_timeline.png>]
+[8 <./figures/high_errU_validate.png> <./figures/high_speed.png>]
+[9 <./figures/high_forces.png>]
+[10] (build/report.aux) )
+(see the transcript file for additional information)</usr/local/texlive/2025/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on build/report.pdf (10 pages, 426477 bytes).
+Transcript written on build/report.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./report.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/underscore/underscore.sty)
+==> First Aid for underscore.sty applied!
+(/usr/local/texlive/2025/texmf-dist/tex/latex/firstaid/underscore-ltx.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+(build/report.aux)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(build/report.out) (build/report.out)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-english.trsl)
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./tables/case_settings.tex) (./tables/rom_settings.tex) (build/report.bbl
+[2]
+[3 <./figures/low_svd_U.png>]
+Underfull \hbox (badness 6961) in paragraph at lines 67--73
+[]\OT1/cmr/m/n/10.95 Zancanaro, Ngan, Sta-bile, and Rozza.  A seg-re-gated redu
+ced-order model
+
+Underfull \hbox (badness 4582) in paragraph at lines 67--73
+\OT1/cmr/m/n/10.95 of a pressure-based solver for tur-bu-lent com-press-ible fl
+ows.  arXiv preprint,
+)
+[4 <./figures/low_energy_U.png>]
+[5 <./figures/low_err_U.png> <./figures/low_timeline.png>]
+[6 <./figures/low_errU_validate.png> <./figures/low_speed.png>]
+[7 <./figures/low_forces.png> <./figures/high_timeline.png>]
+[8 <./figures/high_errU_validate.png> <./figures/high_speed.png>]
+[9 <./figures/high_forces.png>]
+[10] (build/report.aux) )
+(see the transcript file for additional information)</usr/local/texlive/2025/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on build/report.pdf (10 pages, 426477 bytes).
+Transcript written on build/report.log.
+[18:29:57] Report PDF: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/build/report.pdf
+[18:29:57] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/07_make_report_20251218_182950.log

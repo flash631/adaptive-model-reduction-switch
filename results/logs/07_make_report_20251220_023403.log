@@ -1,0 +1,16 @@
+[02:34:03] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[02:34:04] Sourced OpenFOAM: /opt/openfoam13/etc/bashrc
+[02:34:04] Post-processing force coefficients over FOM-only fields (low)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/fom_only/fom_only_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/metrics/forceCoeffsIncompressible_fom_only_meta.json
+[02:34:06] Post-processing force coefficients over ROM-reconstructed fields (low)...
+[02:34:06] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[02:34:06] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[02:34:06] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/adaptive_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/metrics/forceCoeffsIncompressible_adaptive_meta.json
+[02:36:48] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/10_postprocess_coeffs_low_20251220_023406.log
+[02:36:48] Post-processing force coefficients over ROM-reconstructed fields (high)...
+[02:36:48] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[02:36:48] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/high.yaml
+[02:36:48] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...

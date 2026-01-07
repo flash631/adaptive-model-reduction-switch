@@ -1,0 +1,216 @@
+[18:10:06] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/high.yaml
+[18:10:06] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[18:10:06] Syncing cases/base -> cases/high ...
+[18:10:06] Applying high-fidelity settings (mesh/time/writeFormat)...
+[case_setup_low] Updated OpenFOAM dictionaries in /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/high
+[18:10:06] Cleaning case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/high
+[18:10:06] Running blockMesh...
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : blockMesh
+Date   : Dec 18 2025
+Time   : 18:10:06
+Host   : "kalel1938-asus"
+PID    : 638290
+I/O    : uncollated
+Case   : /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/high
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Basic statistics
+    Number of internal faces : 28
+    Number of boundary faces : 64
+    Number of defined boundary faces : 64
+    Number of undefined boundary faces : 0
+
+Checking topology
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0399999 .. 0.0399999
+        j : 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 
+        k : 2
+    Block 1 cell size :
+        i : 0.04 .. 0.04
+        j : 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 
+        k : 2
+    Block 2 cell size :
+        i : 0.36 .. 0.36 0.360433 .. 0.360433 0.36 .. 0.36 0.360433 .. 0.360433 
+        j : 0.109927 .. 0.109927 0.108827 .. 0.106416 0.109927 .. 0.109927 0.108827 .. 0.106416 
+        k : 2
+    Block 3 cell size :
+        i : 0.401005 .. 0.401005
+        j : 0.151005 .. 0.151005
+        k : 2
+    Block 4 cell size :
+        i : 0.109927 .. 0.109927 0.108827 .. 0.106416 0.109927 .. 0.109927 0.108827 .. 0.106416 
+        j : 0.11 .. 0.11 0.110437 .. 0.110437 0.11 .. 0.11 0.110437 .. 0.110437 
+        k : 2
+    Block 5 cell size :
+        i : 0.0399999 .. 0.0399999
+        j : 0.109927 .. 0.109927 0.106787 .. 0.106787 0.109927 .. 0.109927 0.106787 .. 0.106787 
+        k : 2
+    Block 6 cell size :
+        i : 0.04 .. 0.04
+        j : 0.109927 .. 0.109927 0.106787 .. 0.106787 0.109927 .. 0.109927 0.106787 .. 0.106787 
+        k : 2
+    Block 7 cell size :
+        i : 0.36 .. 0.36 0.360433 0.36 .. 0.36 0.360433 
+        j : 0.0989949 0.100081 .. 0.0974537 0.0989949 0.100081 .. 0.0974537 
+        k : 2
+    Block 8 cell size :
+        i : 0.401005 .. 0.401005
+        j : 0.151005 .. 0.151005
+        k : 2
+    Block 9 cell size :
+        i : 0.109927 .. 0.109927 0.106416 .. 0.108827 0.109927 .. 0.109927 0.106416 .. 0.108827 
+        j : 0.151005 .. 0.151005 0.143555 .. 0.143555 0.151005 .. 0.151005 0.143555 .. 0.143555 
+        k : 2
+    Block 10 cell size :
+        i : 0.04 .. 0.04
+        j : 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 
+        k : 2
+    Block 11 cell size :
+        i : 0.0399999 .. 0.0399999
+        j : 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 0.0785196 .. 0.0785196 0.0816604 .. 0.0816604 
+        k : 2
+    Block 12 cell size :
+        i : 0.401005 .. 0.401005 0.393547 .. 0.393547 0.401005 .. 0.401005 0.393547 .. 0.393547 
+        j : 0.109927 .. 0.109927 0.106416 .. 0.108827 0.109927 .. 0.109927 0.106416 .. 0.108827 
+        k : 2
+    Block 13 cell size :
+        i : 0.401005 .. 0.401005
+        j : 0.10201
+        k : 2
+    Block 14 cell size :
+        i : 0.0989949 0.101168 .. 0.0965013 0.0989949 0.101168 .. 0.0965013 
+        j : 0.02 .. 0.02 0.0209757 .. 0.0209757 0.02 .. 0.02 0.0209757 .. 0.0209757 
+        k : 2
+    Block 15 cell size :
+        i : 0.0399999 .. 0.0399999
+        j : 0.109927 .. 0.109927 0.106787 .. 0.106787 0.109927 .. 0.109927 0.106787 .. 0.106787 
+        k : 2
+    Block 16 cell size :
+        i : 0.04 .. 0.04
+        j : 0.109927 .. 0.109927 0.106787 .. 0.106787 0.109927 .. 0.109927 0.106787 .. 0.106787 
+        k : 2
+    Block 17 cell size :
+        i : 0.401005 .. 0.401005 0.393547 .. 0.393547 0.401005 .. 0.401005 0.393547 
+        j : 0.0989949 .. 0.0989949 0.0974537 .. 0.100081 0.0989949 .. 0.0989949 0.0974537 .. 0.100081 
+        k : 2
+    Block 18 cell size :
+        i : 0.401005 .. 0.401005
+        j : 0.10201
+        k : 2
+    Block 19 cell size :
+        i : 0.0989949 .. 0.0989949 0.0965013 .. 0.101168 0.0989949 .. 0.0989949 0.0965013 .. 0.101168 
+        j : 0.10201 0.0871631 .. 0.0871631 0.10201 0.0871631 .. 0.0871631 
+        k : 2
+
+No patch pairs to merge
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-5 -1.5 -1) (5 2.5 1)
+  nPoints: 3830
+  nCells: 1800
+  nFaces: 7315
+  nInternalFaces: 3485
+----------------
+Patches
+----------------
+  patch 0 (start: 3485 size: 35) name: left
+  patch 1 (start: 3520 size: 35) name: right
+  patch 2 (start: 3555 size: 40) name: down
+  patch 3 (start: 3595 size: 40) name: up
+  patch 4 (start: 3635 size: 80) name: cylinder
+  patch 5 (start: 3715 size: 3600) name: defaultFaces
+
+End
+
+[18:10:06] Post-mesh case setup (functionObjects: forces if cylinder patch detected)...
+[case_setup_low] Added forces functionObject for patch: cylinder
+[case_setup_low] Updated OpenFOAM dictionaries in /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/high
+[18:10:06] Runner: foamRun  Solver: \1
+[18:10:06] Running solver...
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : foamRun -solver \1
+Date   : Dec 18 2025
+Time   : 18:10:06
+Host   : "kalel1938-asus"
+PID    : 638314
+I/O    : uncollated
+Case   : /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/high
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function void* Foam::dlOpen(const fileName&, bool)
+    in file POSIX.C at line 1247
+    dlopen error : lib\1.so: cannot open shared object file: No such file or directory
+--> FOAM Warning : 
+    From function bool Foam::dlLibraryTable::open(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 106
+    could not load "lib\1.so"
+Create mesh for time = 0
+
+Selecting solver \1
+--> FOAM Warning : 
+    From function void* Foam::dlOpen(const fileName&, bool)
+    in file POSIX.C at line 1247
+    dlopen error : lib\1.so: cannot open shared object file: No such file or directory
+--> FOAM Warning : 
+    From function bool Foam::dlLibraryTable::open(const Foam::fileName&, bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 106
+    could not load "lib\1.so"
+
+
+--> FOAM FATAL ERROR: 
+solvers table is empty
+
+    From function static Foam::autoPtr<Foam::solver> Foam::solver::New(const Foam::word&, Foam::fvMesh&)
+    in file solver/solverNew.C at line 48.
+
+FOAM exiting
+

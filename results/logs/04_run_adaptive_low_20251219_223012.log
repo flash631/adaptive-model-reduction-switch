@@ -1,0 +1,13 @@
+[22:30:12] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[22:30:12] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[22:30:12] Running adaptive driver (FOM/ROM switching)...
+Traceback (most recent call last):
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 566, in <module>
+    main()
+    ~~~~^^
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 453, in main
+    wall["fom_s"] += _run(runner, cwd=case_dir, log_path=log_path)
+                     ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/adaptive_driver.py", line 115, in _run
+    raise RuntimeError(f"Command failed (rc={rc}): {' '.join(cmd)} (see {log_path})")
+RuntimeError: Command failed (rc=-8): foamRun -solver incompressibleFluid (see /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/logs/adaptive_driver.log)

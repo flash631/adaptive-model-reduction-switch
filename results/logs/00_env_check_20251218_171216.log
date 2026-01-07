@@ -1,0 +1,16 @@
+[17:12:16] Repo root: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction
+[17:12:16] PWD: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction
+[17:12:16] User: kalel1938  Host: kalel1938-asus
+[17:12:16] Checking OpenFOAM environment...
+[17:12:16] foamVersion: NOT FOUND (did you source OpenFOAM-13 bashrc?)
+[17:12:16] Checking key OpenFOAM executables (command -v)...
+[17:12:16] blockMesh: /opt/openfoam13/platforms/linux64GccDPInt32Opt/bin/blockMesh
+[17:12:16] icoFoam: /opt/openfoam13/platforms/linux64GccDPInt32Opt/bin/icoFoam
+[17:12:16] pimpleFoam: /opt/openfoam13/bin/pimpleFoam
+[17:12:16] paraFoam: /opt/openfoam13/bin/paraFoam
+[17:12:16] foamToVTK: /opt/openfoam13/platforms/linux64GccDPInt32Opt/bin/foamToVTK
+[17:12:16] Checking Python (prefer venv)...
+[17:12:16] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[17:12:16] python: /home/kalel1938/venvs/myenv/bin/python
+[17:12:16] python --version: Python 3.13.7
+[17:12:16] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/00_env_check_20251218_171216.log

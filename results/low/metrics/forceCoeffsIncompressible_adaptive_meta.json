@@ -1,0 +1,12 @@
+{
+  "case": "adaptive",
+  "case_dir": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/results/low/adaptive/adaptive_case",
+  "force_coeffs_dat": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/results/low/adaptive/adaptive_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat",
+  "func_name": "forceCoeffsIncompressible",
+  "func_path": "/home/kalel1938/Documents/codex_projects/adaptive_model_reduction_copy/results/low/adaptive/adaptive_case/system/forceCoeffsIncompressible",
+  "patch": "cylinder",
+  "time_range": [
+    0.0,
+    10.0
+  ]
+}

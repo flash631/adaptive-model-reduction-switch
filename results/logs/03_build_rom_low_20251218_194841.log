@@ -1,0 +1,6 @@
+[19:48:41] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[19:48:41] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[19:48:41] Building POD + OpInf ROM and writing ROM-only forecast case...
+[build_rom_low] Wrote ROM outputs to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/rom
+[build_rom_low] Wrote ROM OpenFOAM case to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/rom_case
+[19:48:44] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/03_build_rom_low_20251218_194841.log

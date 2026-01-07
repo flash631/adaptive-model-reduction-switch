@@ -1,0 +1,190 @@
+[18:28:23] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[18:28:23] Generating tables/figures from results...
+[report_assets] Wrote tables to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/tables
+[report_assets] Wrote/copied figures to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures
+[18:28:23] Generating BibTeX from references PDFs...
+[references_bib] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/report.bib (10 entries)
+[18:28:24] Exporting first 3 POD velocity modes to an OpenFOAM case (low)...
+[export_pod_modes] Wrote modes case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/modes_case
+[18:28:24] Attempting ParaView screenshots (pvpython)...
+[pv_screenshots] pvpython screenshot generation failed: Command failed (rc=-6): pvpython /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/python/pv_screenshots.py --mode pv --figdir /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/report/figures
+[kalel1938-asus:643429] opal_ifinit: socket() failed with errno=1
+[kalel1938-asus:643429] pmix_ifinit: socket() failed with errno=1
+--------------------------------------------------------------------------
+A system call failed during shared memory initialization that should
+not have.  It is likely that your MPI job will now either abort or
+experience performance degradation.
+
+  Local host:  kalel1938-asus
+  System call: open(2) 
+  Error:       Permission denied (errno 13)
+--------------------------------------------------------------------------
+[0m[31m(   1.041s) [paraview        ]vtkXOpenGLRenderWindow.:459    ERR| vtkXOpenGLRenderWindow (0x57bdf5a66910): bad X server connection. DISPLAY=:0. Aborting.
+[0m
+[kalel1938-asus:643429] *** Process received signal ***
+[kalel1938-asus:643429] Signal: Aborted (6)
+[kalel1938-asus:643429] Signal code:  (-6)
+[kalel1938-asus:643429] [ 0] /usr/lib/x86_64-linux-gnu/libc.so.6(+0x45f60) [0x7ca053e45f60]
+[kalel1938-asus:643429] [ 1] /usr/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x11d) [0x7ca053ea5fed]
+[kalel1938-asus:643429] [ 2] /usr/lib/x86_64-linux-gnu/libc.so.6(gsignal+0x1e) [0x7ca053e45e2e]
+[kalel1938-asus:643429] [ 3] /usr/lib/x86_64-linux-gnu/libc.so.6(abort+0x27) [0x7ca053e28888]
+[kalel1938-asus:643429] [ 4] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow13CreateAWindowEv+0x355) [0x7ca04efbf907]
+[kalel1938-asus:643429] [ 5] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow16WindowInitializeEv+0x29) [0x7ca04efc166b]
+[kalel1938-asus:643429] [ 6] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow10InitializeEv+0x3c) [0x7ca04efc173a]
+[kalel1938-asus:643429] [ 7] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow5StartEv+0x29) [0x7ca04efc1b0d]
+[kalel1938-asus:643429] [ 8] /usr/lib/x86_64-linux-gnu/libvtkRenderingUI-pv5.13.so.1(_ZN26vtkXRenderWindowInteractor10InitializeEv+0x73a) [0x7ca04fb50acc]
+[kalel1938-asus:643429] [ 9] /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-pv5.13.so.1(_ZN15vtkRenderWindow6RenderEv+0x32f) [0x7ca04ceba3a3]
+[kalel1938-asus:643429] [10] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN21vtkOpenGLRenderWindow6RenderEv+0x84) [0x7ca04eea8fcc]
+[kalel1938-asus:643429] [11] /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-pv5.13.so.1(_ZN22vtkXOpenGLRenderWindow6RenderEv+0xa2) [0x7ca04efc5d9c]
+[kalel1938-asus:643429] [12] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN15vtkPVRenderView6RenderEbb+0x1341) [0x7ca0537133a7]
+[kalel1938-asus:643429] [13] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN15vtkPVRenderView11StillRenderEv+0x109) [0x7ca053711e79]
+[kalel1938-asus:643429] [14] /usr/lib/x86_64-linux-gnu/libvtkRemotingApplication-pv5.13.so.1(_Z22vtkPVRenderViewCommandP26vtkClientServerInterpreterP13vtkObjectBasePKcRK21vtkClientServerStreamRS5_Pv+0x137e) [0x7ca05a3f391f]
+[kalel1938-asus:643429] [15] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter19CallCommandFunctionEPKcP13vtkObjectBaseS1_RK21vtkClientServerStreamRS4_+0x376) [0x7ca059fb1fc2]
+[kalel1938-asus:643429] [16] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter20ProcessCommandInvokeERK21vtkClientServerStreami+0x205) [0x7ca059fb0183]
+[kalel1938-asus:643429] [17] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter17ProcessOneMessageERK21vtkClientServerStreami+0x170) [0x7ca059faf5cc]
+[kalel1938-asus:643429] [18] /usr/lib/x86_64-linux-gnu/libvtkRemotingClientServerStream-pv5.13.so.1(_ZN26vtkClientServerInterpreter13ProcessStreamERK21vtkClientServerStream+0x33) [0x7ca059faf42b]
+[kalel1938-asus:643429] [19] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionCore21ExecuteStreamInternalERK21vtkClientServerStreamb+0xfe) [0x7ca059afd126]
+[kalel1938-asus:643429] [20] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionCore13ExecuteStreamEjRK21vtkClientServerStreamb+0x208) [0x7ca059afceb6]
+[kalel1938-asus:643429] [21] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN16vtkPVSessionBase13ExecuteStreamEjRK21vtkClientServerStreamb+0x64) [0x7ca059af8eae]
+[kalel1938-asus:643429] [22] /usr/lib/x86_64-linux-gnu/libvtkRemotingServerManager-pv5.13.so.1(_ZN10vtkSMProxy13ExecuteStreamERK21vtkClientServerStreambj+0xae) [0x7ca059c6c33c]
+[kalel1938-asus:643429] [23] /usr/lib/x86_64-linux-gnu/libvtkRemotingViews-pv5.13.so.1(_ZN14vtkSMViewProxy11StillRenderEv+0x32f) [0x7ca053882031]
+[kalel1938-asus:643429] [24] /usr/lib/python3/dist-packages/paraview/modules/vtkRemotingViews.cpython-313-x86_64-linux-gnu.so(+0x3186ea) [0x7ca01bd186ea]
+[kalel1938-asus:643429] [25] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x176849) [0x7ca057776849]
+[kalel1938-asus:643429] [26] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyObject_Call+0x69) [0x7ca05771b5f9]
+[kalel1938-asus:643429] [27] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(_PyEval_EvalFrameDefault+0x8e4) [0x7ca05785db24]
+[kalel1938-asus:643429] [28] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(PyEval_EvalCode+0xd9) [0x7ca05785d159]
+[kalel1938-asus:643429] [29] /usr/lib/x86_64-linux-gnu/libpython3.13.so.1.0(+0x2e94bc) [0x7ca0578e94bc]
+[kalel1938-asus:643429] *** End of error message ***
+
+[pv_screenshots] Manual screenshot checklist:
+- Open `cases/low/VTK/low_0.vtk` for mesh screenshots
+- Save mesh whole + zoom near cylinder
+- Save U-mag and p at steps 0,100,200
+- Save vorticity magnitude at step 100
+- Save side-by-side FOM (low_100.vtk) vs ROM (rom_case_0.5.vtk)
+- Save first 3 velocity modes (modes_case_1001/1002/1003.vtk)
+[18:28:27] Compiling LaTeX report...
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./report.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-08-13>
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/pdftex.def)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty)))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/siunitx/siunitx.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations.sty)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def)
+No file report.aux.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg))
+(/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-d
+ictionary-english.trsl)
+
+LaTeX Warning: Citation `Peherstorfer2016' on page 1 undefined on input line 26
+.
+
+
+LaTeX Warning: Citation `SanchezOrtiz2022' on page 1 undefined on input line 26
+.
+
+
+LaTeX Warning: Citation `Conti2024' on page 1 undefined on input line 26.
+
+
+LaTeX Warning: Citation `Star2021' on page 1 undefined on input line 29.
+
+
+LaTeX Warning: Citation `Stabile2017' on page 1 undefined on input line 29.
+
+
+LaTeX Warning: Citation `Rozza2018' on page 1 undefined on input line 29.
+
+
+LaTeX Warning: Citation `Hijazi2019' on page 1 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Stabile2017' on page 1 undefined on input line 32.
+
+
+LaTeX Warning: Citation `Benner2020' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Citation `Kramer2024' on page 1 undefined on input line 39.
+
+
+LaTeX Warning: Citation `Peherstorfer2016' on page 1 undefined on input line 42
+.
+
+
+LaTeX Warning: Citation `SanchezOrtiz2022' on page 1 undefined on input line 42
+.
+
+
+LaTeX Warning: Citation `Zancanaro2024' on page 1 undefined on input line 42.
+
+
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `tab:case' on page 2 undefined on input line 45.
+
+
+LaTeX Warning: Reference `tab:rom' on page 2 undefined on input line 45.
+
+(./tables/case_settings.tex) (./tables/rom_settings.tex
+! Missing $ inserted.
+<inserted text> 
+                $
+l.3 case & r_
+             u & r_p & ridge & nCells \\
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on build/report.log.

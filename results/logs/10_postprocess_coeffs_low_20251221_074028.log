@@ -1,0 +1,6 @@
+[07:40:28] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[07:40:28] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[07:40:28] Post-processing force coefficients over reconstructed ROM fields (adaptive case)...
+[postprocess_force_coeffs] Wrote: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/adaptive/adaptive_case/postProcessing/forceCoeffsIncompressible/0/forceCoeffs.dat
+[postprocess_force_coeffs] Meta: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/low/metrics/forceCoeffsIncompressible_adaptive_meta.json
+[07:42:14] Done. Log saved to: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/results/logs/10_postprocess_coeffs_low_20251221_074028.log

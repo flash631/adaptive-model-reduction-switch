@@ -1,0 +1,50 @@
+[17:22:33] Using config: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/rom/configs/low.yaml
+[17:22:33] Activated venv: /home/kalel1938/venvs/myenv/bin/activate
+[17:22:33] Syncing cases/base -> cases/low ...
+[17:22:34] Applying low-fidelity settings (mesh/time/writeFormat)...
+[case_setup_low] Updated OpenFOAM dictionaries in /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+[17:22:34] Cleaning case: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+[17:22:34] Running blockMesh...
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 13-cde978a97c93
+Exec   : blockMesh
+Date   : Dec 18 2025
+Time   : 17:22:34
+Host   : "kalel1938-asus"
+PID    : 622202
+I/O    : uncollated
+Case   : /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading "blockMeshDict"
+
+Creating block mesh from
+    "system/blockMeshDict"
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+
+
+--> FOAM FATAL IO ERROR: 
+Block hex (5 4 9 10 37 36 41 42) (5 5 1) simpleGrading (1(1) 1(1) 1(1)) has inward-pointing faces
+    4(37 36 41 42) 
+
+file: /home/kalel1938/Documents/codex_projects/adaptive_model_reduction/cases/low/system/blockMeshDict/blocks at line 88.
+
+    From function void Foam::blockDescriptor::check(const Foam::Istream&)
+    in file blockDescriptor/blockDescriptor.C at line 106.
+
+FOAM exiting
+
